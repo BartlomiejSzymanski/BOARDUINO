@@ -1,11 +1,12 @@
 class Player:
-    def __init__(self, name):
+    def __init__(self, name, team):
         self.__fields = []
         self.__respect = 0
-        self.__name = name
+        self.name = name
+        self.team = team
 
-    def get_name(self):
-        return self.__name
+    # def get_name(self):
+    #     return self.__name
 
     def get_respect(self):
         return self.__respect
@@ -13,8 +14,8 @@ class Player:
     def update_respect(self, value):
         self.__respect += value
 
-    def set_name(self, name):
-        self.__name = name
+    # def set_name(self, name):
+    #     self.__name = name
 
     def add_turn(self, field, respect=0):
         self.__fields.append(field)
@@ -34,4 +35,4 @@ class Player:
             return 0
 
     def __str__(self):
-        return f'{self.__name} ({self.__respect})'
+        return f'{self.name} ({self.team})'

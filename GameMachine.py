@@ -13,6 +13,18 @@ class GameMachine:
         self.input = GameInput()
         self.output = GameOutput()
         self.data = Data()
+        self.fields = {
+            1: ["START", ""], 2: ["Ulica Konopacka", ""], 3: ["Kasa Społeczna", ""], 4: ["Ulica Stalowa", ""],
+            5: ["Podatek Dochodowy", ""], 6: ["Dworzec Zachodni ", ""], 7: ["Ulica Radzymińska", ""], 8: ["Szansa", ""],
+            9: ["Ulica Jagiellońska", ""], 10: ["Ulica Targowa", ""], 11: ["Więzienie", ""], 12: ["Ulica Płowiecka", ""],
+            13: ["Elektrownia", ""], 14: ["Ulica Marsa", ""], 15: ["Ulica Grochowska", ""], 16: ["Dworzec Gdański", ""],
+            17: ["Ulica Obozowa", ""], 18: ["Kasa Społeczna", ""], 19: ["Ulica Górczewska", ""], 20: ["Ulica Wolska", ""],
+            21: ["Bezpłatny parking", ""], 22: ["Ulica Mickiewicza", ""], 23: ["Szansa", ""], 24: ["Ulica Słowackiego", ""],
+            25: ["Plac Wilsona", ""], 26: ["Dworzec Wschodni", ""], 27: ["Ulica Świętokrzyska", ""], 28: ["Krakowskie Przedmieście", ""],
+            29: ["Wodociągi", ""], 30: ["Nowy Świat", ""], 31: ["Idź do więzienia", ""], 32: ["Plac Trzech Krzyży", ""],
+            33: ["Ulica Marszałkowska", ""], 34: ["Kasa Społeczna", ""], 35: ["Aleje Jerozolimskie", ""], 36: ["Dworzec Centralny", ""],
+            37: ["Szansa", ""], 38: ["Ulica Belwederska", ""], 39: ["Domiar Podatkowy", ""], 40: ["Aleje Ujazdowskie", ""]
+        }
 
     # ------ game setup section - adding, deleting and editing players at the beginning of game ------
 
@@ -32,7 +44,7 @@ class GameMachine:
                 else:
                     print("Add more players")
             elif key.isdigit() and int(key) in range(1, len(self.data.names) + 1):
-                self.add_player(self.data.names[int(key) - 1])
+                self.add_player(self.data.names[int(key) - 1][0], self.data.names[int(key) - 1][1])
                 print(f"Added {self.data.names[int(key) - 1]}")
             else:
                 print("wrong input - try again")
@@ -65,7 +77,7 @@ class GameMachine:
                 print(self.data.names)
                 key = self.input.numpad()
                 if key.isdigit():
-                    self.update_player(int(ind) - 1, self.data.names[int(key) - 1])
+                    self.update_player(int(ind) - 1, self.data.names[int(key) - 1][0], self.data.names[int(key) - 1][1])
             elif ind == '#':
                 break
 
@@ -93,11 +105,12 @@ class GameMachine:
             print(f'{i}: {pl}')
             i += 1
 
-    def add_player(self, name):
-        self.__players.append(Player(name))
+    def add_player(self, name, team):
+        self.__players.append(Player(name, team))
 
-    def update_player(self, index, name):
-        self.__players[index].set_name(name)
+    def update_player(self, index, name, team):
+        self.__players[index].name = name
+        self.__players[index].team = team
 
     def get_player_num(self):
         return len(self.__players)
@@ -131,6 +144,8 @@ class GameMachine:
             field = self.input.field()
             if field in range(1, 41):
                 self.__current_player.add_turn(int(field))
+                if self.fields[int(field)][1] == "":
+                    self.fields[int(field)][1] = self.__current_player.team
                 self.show_message()
                 break
 
@@ -149,12 +164,19 @@ class GameMachine:
     def show_message(self):
         self.data.print_story(self.__current_player.last_field(),
                               self.__current_player.current_field(),
-                              self.__current_player.get_name())
+                              self.__current_player.name,
+                              self.__current_player.team)
+
+    def get_player_info(self):
+        return (self.__current_player.last_field(),
+                self.__current_player.current_field(),
+                self.__current_player.name,
+                self.__current_player.team)
 
 
 gm = GameMachine()
-gm.add_player("Mario")
-gm.add_player("Luigi")
-gm.add_player("Vito")
-# gm.setup_game()
-gm.start_game()
+# gm.add_player("Mario")
+# gm.add_player("Luigi")
+# gm.add_player("Vito")
+gm.setup_game()
+# gm.start_game()
