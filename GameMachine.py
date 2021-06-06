@@ -145,8 +145,23 @@ class GameMachine:
             if field in range(1, 41):
                 self.__current_player.add_turn(int(field))
                 if self.fields[int(field)][1] == "":
-                    self.fields[int(field)][1] = self.__current_player.team
-                self.show_message()
+                    while True:
+                        print("Buying? (1 - y, 2 - n)")
+                        dec = self.input.numpad()
+                        if dec == "1":
+                            self.fields[int(field)][1] = self.__current_player.team
+                            occupied = "buy"
+                            break
+                        elif dec == "2":
+                            occupied = "not"
+                            break
+                        else:
+                            print("wrong input. try again")
+                elif self.fields[int(field)][1] == self.__current_player.team:
+                    occupied = "owning"
+                else:
+                    occupied = "enemy"
+                self.show_message(occupied)
                 break
 
     def end_turn(self):
@@ -161,11 +176,12 @@ class GameMachine:
     def undo(self):
         pass
 
-    def show_message(self):
+    def show_message(self, buy):
         self.data.print_story(self.__current_player.last_field(),
                               self.__current_player.current_field(),
                               self.__current_player.name,
-                              self.__current_player.team)
+                              self.__current_player.team,
+                              buy)
 
     def get_player_info(self):
         return (self.__current_player.last_field(),
