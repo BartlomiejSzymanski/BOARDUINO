@@ -3,9 +3,9 @@ import ili9341
 from xglcd_font import XglcdFont
 from time import sleep
 import math
+import klawiatura
 
 
-import GameInput
 
 class GameOutput:
     def __init__(self):
@@ -22,19 +22,25 @@ class GameOutput:
     def print_screen(self, text):
         x = 0
         y = 0
+        
         self.__display.clear()
         line_list = self.format_text(text)
         cntr = 0
+        
         for line in line_list:
             self.__display.draw_text(x, y, line, self.__font_obj, self.__color_white)   #  def draw_text(self, x, y, text, font, color,  background=0, landscape=False, spacing=1):
             y += 30
             cntr += 1
+
+
             if cntr == 6:
                 y +=30
                 self.__display.draw_text(x, y, " [Przycisk] - czytaj dalej", self.__font_obj, self.__color_white) 
+                key = klawiatura.get_key()
                 y = 0
                 cntr = 0
-                sleep(3)
+                self.__display.clear()
+
 
         
         print("\nTEXT PRINTED\n")
