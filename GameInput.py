@@ -4,7 +4,7 @@ import machine
 import math
 import ili9341
 from xglcd_font import XglcdFont
-
+import klawiatura
 
 
 
@@ -22,7 +22,8 @@ class GameInput:
 
 
     def get_numpad(self):
-        key = input('numpad: ')
+        #returns string, see klawiatura.py
+        key = klawiatura.get_key()
         return key
 
     def get_field(self):
@@ -36,19 +37,22 @@ class GameInput:
         # FONT
         font_path  = "/Unispace12x24.c"
         unispace = XglcdFont(font_path, 12, 24) #def __init__(self, path, width, height, start_letter=32, letter_count=96):
-
+        # FONT END
 
         self.__display.draw_text(100, 100, "Wprowadz pole", unispace, color)
-        # FONT END
+        
 
 
 
         # GET VOLTAGE FROM ONE OF THE MODULES
         while True:
+
+            time.sleep_ms(10)
+
             voltage_val_1 = self.__module_1.read() * 5 / 4095
             voltage_val_2 = self.__module_2.read() * 5 / 4095
             print("Voltage_val_1: ", voltage_val_1, "Voltage_val_2: ", voltage_val_2)
-            sleep(0.1)
+
             if voltage_val_1 >= 0.1:
                 voltage = voltage_val_1
                 print("Voltage 1:  ", voltage)
