@@ -33,28 +33,28 @@ class GameMachine:
         Sets up players and allows for editing players"""
 
         while True:
-            print(f"Pick name for player {self.get_player_num() + 1}: 1 - Mario, 2 - Luigi, 3 - Vito; # to stop")
-            key = self.input.numpad()
-            # print(key)
+            self.output.print_screen(f"Pick name for player {self.get_player_num() + 1}: 1 - Mario, 2 - Luigi, 3 - Vito; # to stop")
+            key = self.input.get_numpad()
+            # self.output.print_screen(key)
             if key == "#":
                 if self.get_player_num() > 6:
                     self.delete_players()
                 if self.get_player_num() > 1:
                     break
                 else:
-                    print("Add more players")
+                    self.output.print_screen("Add more players")
             elif key.isdigit() and int(key) in range(1, len(self.data.names) + 1):
                 self.add_player(self.data.names[int(key) - 1][0], self.data.names[int(key) - 1][1])
-                print(f"Added {self.data.names[int(key) - 1]}")
+                self.output.print_screen(f"Added {self.data.names[int(key) - 1]}")
             else:
-                print("wrong input - try again")
+                self.output.print_screen("wrong input - try again")
         while True:
             gm.show_players("Players")
             if self.get_player_num() < 3:
-                print("Do you want to (1) edit player's name, (#) proceed to game?")
+                self.output.print_screen("Do you want to (1) edit player's name, (#) proceed to game?")
             else:
-                print("Do you want to (1) edit player's name, (2) delete player, (#) proceed to game?")
-            key = self.input.numpad()
+                self.output.print_screen("Do you want to (1) edit player's name, (2) delete player, (#) proceed to game?")
+            key = self.input.get_numpad()
             if key.isdigit() and int(key) == 1:
                 self.edit_players()
             elif key.isdigit() and int(key) == 2 and self.get_player_num() > 2:
@@ -71,11 +71,11 @@ class GameMachine:
 
         while True:
             self.show_players("Choose player to edit (# to stop)")
-            ind = self.input.numpad()
+            ind = self.input.get_numpad()
             if ind.isdigit() and int(ind) in range(1, self.get_player_num() + 1):
-                print("choose new player name")
-                print(self.data.names)
-                key = self.input.numpad()
+                self.output.print_screen("choose new player name")
+                self.output.print_screen(self.data.names)
+                key = self.input.get_numpad()
                 if key.isdigit():
                     self.update_player(int(ind) - 1, self.data.names[int(key) - 1][0], self.data.names[int(key) - 1][1])
             elif ind == '#':
@@ -84,25 +84,25 @@ class GameMachine:
     def delete_players(self):
         while True:
             self.show_players("Choose player to delete (# to stop)")
-            key = self.input.numpad()
+            key = self.input.get_numpad()
             if key.isdigit() and int(key) in range(1, self.get_player_num() + 1):
                 self.__players.pop(int(key) - 1)
                 if self.get_player_num() < 3:
                     break
             elif key == '#' and self.get_player_num() > 6:
-                print("To many players. You have to delete more.")
+                self.output.print_screen("To many players. You have to delete more.")
             elif key == '#':
                 break
             else:
-                print("wrong input - try again")
+                self.output.print_screen("wrong input - try again")
 
     def show_players(self, title):
         """Displays list of players with given title"""
 
         i = 1
-        print(f"--- {title} ---")
+        self.output.print_screen(f"--- {title} ---")
         for pl in self.__players:
-            print(f'{i}: {pl}')
+            self.output.print_screen(f'{i}: {pl}')
             i += 1
 
     def add_player(self, name, team):
@@ -123,9 +123,9 @@ class GameMachine:
 
     def turn(self):
         while True:
-            print(f'{self.__current_player} your turn')
-            print(f'1 - move. 2 - bankrupt, 3 - undo move, # - end turn')
-            key = self.input.numpad()
+            self.output.print_screen(f'{self.__current_player} your turn')
+            self.output.print_screen(f'1 - move. 2 - bankrupt, 3 - undo move, # - end turn')
+            key = self.input.get_numpad()
             if key == '#':
                 self.end_turn()
             elif key.isdigit() and key == "1":
@@ -136,18 +136,18 @@ class GameMachine:
             elif key.isdigit() and key == "3":
                 self.undo()
             else:
-                print("invalid input - try again")
+                self.output.print_screen("invalid input - try again")
 
     def move(self):
         while True:
-            print("Waiting for field")
-            field = self.input.field()
+            self.output.print_screen("Waiting for field")
+            field = self.input.get_field()
             if field in range(1, 41):
                 self.__current_player.add_turn(int(field))
                 if self.fields[int(field)][1] == "":
                     while True:
-                        print("Buying? (1 - y, 2 - n)")
-                        dec = self.input.numpad()
+                        self.output.print_screen("Buying? (1 - y, 2 - n)")
+                        dec = self.input.get_numpad()
                         if dec == "1":
                             self.fields[int(field)][1] = self.__current_player.team
                             occupied = "buy"
@@ -156,7 +156,7 @@ class GameMachine:
                             occupied = "not"
                             break
                         else:
-                            print("wrong input. try again")
+                            self.output.print_screen("wrong input. try again")
                 elif self.fields[int(field)][1] == self.__current_player.team:
                     occupied = "owning"
                 else:
