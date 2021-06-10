@@ -13,18 +13,6 @@ class GameMachine:
         self.input = GameInput()
         self.output = GameOutput()
         self.data = Data()
-        self.fields = {
-            1: ["START", ""], 2: ["Ulica Konopacka", ""], 3: ["Kasa Społeczna", ""], 4: ["Ulica Stalowa", ""],
-            5: ["Podatek Dochodowy", ""], 6: ["Dworzec Zachodni ", ""], 7: ["Ulica Radzymińska", ""], 8: ["Szansa", ""],
-            9: ["Ulica Jagiellońska", ""], 10: ["Ulica Targowa", ""], 11: ["Więzienie", ""], 12: ["Ulica Płowiecka", ""],
-            13: ["Elektrownia", ""], 14: ["Ulica Marsa", ""], 15: ["Ulica Grochowska", ""], 16: ["Dworzec Gdański", ""],
-            17: ["Ulica Obozowa", ""], 18: ["Kasa Społeczna", ""], 19: ["Ulica Górczewska", ""], 20: ["Ulica Wolska", ""],
-            21: ["Bezpłatny parking", ""], 22: ["Ulica Mickiewicza", ""], 23: ["Szansa", ""], 24: ["Ulica Słowackiego", ""],
-            25: ["Plac Wilsona", ""], 26: ["Dworzec Wschodni", ""], 27: ["Ulica Świętokrzyska", ""], 28: ["Krakowskie Przedmieście", ""],
-            29: ["Wodociągi", ""], 30: ["Nowy Świat", ""], 31: ["Idź do więzienia", ""], 32: ["Plac Trzech Krzyży", ""],
-            33: ["Ulica Marszałkowska", ""], 34: ["Kasa Społeczna", ""], 35: ["Aleje Jerozolimskie", ""], 36: ["Dworzec Centralny", ""],
-            37: ["Szansa", ""], 38: ["Ulica Belwederska", ""], 39: ["Domiar Podatkowy", ""], 40: ["Aleje Ujazdowskie", ""]
-        }
 
     # ------ game setup section - adding, deleting and editing players at the beginning of game ------
 
