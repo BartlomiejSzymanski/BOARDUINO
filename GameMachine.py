@@ -34,7 +34,7 @@ class GameMachine:
 
         while True:
             # self.output.print_screen(f"Pick name for player {self.get_player_num() + 1}: 1 - Mario, 2 - Luigi, 3 - Vito; # to stop")
-            self.output.print_screen(f"Pick name and team for player {self.get_player_num() + 1}:\n {self.data.names[:10]}")
+            self.output.print_screen(f"Pick name and team for player {self.get_player_num() + 1}: {self.data.names[:10]}")
             key = self.input.get_numpad()
             # self.output.print_screen(key)
             if key == "#":
