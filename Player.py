@@ -26,13 +26,13 @@ class Player:
         if len(self.__fields) >= 2:
             return self.__fields[-2]
         else:
-            return 0
+            return 1
 
     def current_field(self):
         if len(self.__fields):
             return self.__fields[-1]
         else:
-            return 0
+            return 1
 
     def __str__(self):
         return f'{self.name} ({self.team})'

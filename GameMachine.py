@@ -190,9 +190,10 @@ class GameMachine:
                 self.__current_player.team)
 
 
-gm = GameMachine()
-# gm.add_player("Mario")
-# gm.add_player("Luigi")
-# gm.add_player("Vito")
-gm.setup_game()
-# gm.start_game()
+if __name__ == "__main__":
+    gm = GameMachine()
+    # gm.add_player("Mario")
+    # gm.add_player("Luigi")
+    # gm.add_player("Vito")
+    gm.setup_game()
+    # gm.start_game()
