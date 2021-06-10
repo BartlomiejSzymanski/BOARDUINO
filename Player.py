@@ -35,4 +35,4 @@ class Player:
             return 1
 
     def __str__(self):
-        return f'{self.name} ({self.team})'
+        return '{} ({})'.format(self.name, self.team)
