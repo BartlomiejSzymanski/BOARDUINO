@@ -48,39 +48,192 @@ class Data:
         # B: Wołomin wchodzi na-> Pruszków
         # C: Pruszków kupuje
         # D: Wołomin kupuje
+        # E: Szansa/Kasa Społeczna Pruszków 
+        # F: Szansa/Kasa Społeczna Wołomin
 
         self.stories = {
-            'A': ["""Prawnik ze swoją teczką może nakraść więcej niż stu ludzi z rewolwerami.
-            Przejmujesz {pole} po szwindlu finansowym dokonanym przez
-            waszego księgowego i przymknięciu oka przez urzędnika, którego udało się Tobie przekupić.
-            Uważaj na rozwścieczonych bandytów Wołominu, czyhających w okolicznych dzielnicach."""],
-            'B': [
+            'A': ["""""",
+                """Grupa skorumpowanych funkcjonariuszy policji postanowiła zagarnąć {pole} należące jeszcze do niedawna przez
+                gangsterów z Wołominu. Wasz księgowy, a zarazem syn Pershinga – Jeremiasz Barański, korzystając z wyświadczonej 
+                przysługi wobec oficera CBŚ, przejmuje dla was lokalne nieruchomości na półlegalnie. Pershing przerabia uzyskane
+                budowle w bar, pralnię i klub disco, gdzie możecie rekrutować kolejnych wykidajłów.""",
+                """Starasz się razem z ekipą z {pole} przepędzić wrogich badnytów ze spornego terytorium. Nie udaje się to wam.
+                Z kawiarni, której właścicielką jest Mira Orłow, była małżonka Pershinga, wyskakuje zastęp uzbrojonych po zęby
+                mafiozów z Wołominu. Ponosicie duże straty i zarządzacie odwrót.""",
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """
+            ]
+            ,
+            'B': [""" """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """
 
             ],
-            'C': [
+            'C': ["""Prawnik ze swoją teczką może nakraść więcej niż stu ludzi z rewolwerami.
+                Przejmujesz {pole} po przekręcie finansowym dokonanym przez waszego 
+                księgowego, który przekupił pracownika Urzędu Skarbowego, aby ten przymknął oko 
+                na wasze poczynania. Uważaj na rozwścieczonych bandytów Wołominu, czyhających w okolicznych dzielnicach.""",
+                """Poszukując Anastazji, Pershing wysyła Cię na zwiady w okolice stadionu, w okolicy kótrego po raz ostatni
+                wychwycono sygnał z jej komórki. Po córce szefa ani śladu, za to znaleźliście skład kontrabandy ukryty w piwnicy
+                opustoszałego bundyku nieopdal stadionu. Postanawiacie przejąć nieruchomość, opłacając skarbówkę.""",
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """
 
             ],
-            'D': [
+            'D': [""" """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """
+            ],
+            'E': [""" """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """
+
+            ],
+            'F': [""" """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """,
+                """ """
 
             ]
         }
 
     def print_story(self, last, curr, pl, team, buy):
-        if (team == "P"):
-            if (buy == "buy"):
-                print(choice(self.stories['C'].format(pole=self.fields[curr])))
-            elif (buy == "not"):
-                print(None)
-            elif (buy == "owning"):
-                print(choice(self.stories['A'].format(pole=self.fields[curr])))
+        if (curr = "Szansa" or "Kasa Społeczna"):
+            if (team = "P"):
+                print(choice(self.stories['E'].format(pole=self.fields[curr])))
             else:
-                print("Wkroczyłeś na terytorium zajęte przez wroga")
+                print(choice(self.stories['F'].format(pole=self.fields[curr])))
+        elif: (curr = "Domiar Podatkowy" or "Podatek Dochodowy"):
+            if (team = "P"):
+            else:    
+        elif: (curr = "Bezpłatny parking"):
+            if (team = "P"):
+                print("Czekasz na nowe zlecenia od Pershinga.")
+            else:    
+                print("Czekasz na nowe zlecenia od Klepaka.")
+        elif: (curr = "Więzienie"):
+            if (team = "P"):
+            else:    
+        elif: (curr = "Idź do więzienia"):
+            if (team = "P"):
+            else:
+        elif: (curr = "Start"):
+            if (team = "P"):
+            else:        
         else:
-            if (buy == "buy"):
-                print(choice(self.stories['D'].format(pole=self.fields[curr])))
-            elif (buy == "not"):
-                print(None)
-            elif (buy == "owning"):
-                print(choice(self.stories['B'].format(pole=self.fields[curr])))
+            if (team == "P"):
+                if (buy == "buy"):
+                    print(choice(self.stories['C'].format(pole=self.fields[curr])))
+                elif (buy == "not"):
+                    print(None)
+                elif (buy == "owning"):
+                    print(choice(self.stories['A'].format(pole=self.fields[curr])))
+                else:
+                    print("Wkroczyłeś na terytorium zajęte przez wroga")
             else:
-                print("Wkroczyłeś na terytorium zajęte przez wroga")
+                if (buy == "buy"):
+                    print(choice(self.stories['D'].format(pole=self.fields[curr])))
+                elif (buy == "not"):
+                    print(None)
+                elif (buy == "owning"):
+                    print(choice(self.stories['B'].format(pole=self.fields[curr])))
+                else:
+                    print("Wkroczyłeś na terytorium zajęte przez wroga")
