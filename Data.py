@@ -113,7 +113,8 @@ class Data:
                 """Poszukując Anastazji, Pershing wysyła Cię na zwiady w okolice stadionu, w okolicy kótrego po raz ostatni
                 wychwycono sygnał z jej komórki. Po córce szefa ani śladu, za to znaleźliście skład kontrabandy ukryty w piwnicy
                 opustoszałego bundyku nieopdal stadionu. Postanawiacie przejąć nieruchomość, opłacając skarbówkę.""",
-                """ """,
+                """Inwestycje rządzą światem. Przekazujecie kilkadziesiąt tysięcy gotówki na rozrkęcenie lombardu nieopodal {pole}.
+                Pomaga Ci w tym zadaniu "Mas" – jeden z najbardziej zaufanych współpracowników Pershinga.""",
                 """ """,
                 """ """,
                 """ """,
@@ -157,7 +158,8 @@ class Data:
             'E': ["""'Baranina' uzyskuje dla Ciebie przepustkę z więizienia w razie, gdyby złapano się w akcji, do której Cię
                 przygotowuje. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment.""",
                 """Zostajesz wrobiony w kradzież biżuterii niskiego sortu. Trafiasz do aresztu na kilka miesięcy.""",
-                """Idź na Dworzec Zachodni. """,
+                """Idź na Dworzec Zachodni. Będą tam na Ciebie czekać konsultanci podatkowi przyjaźni Pershingowi, z którymi
+                być może dobijesz targu.""",
                 """ """,
                 """ """,
                 """ """,
@@ -231,15 +233,15 @@ class Data:
                 elif (buy == "not"):
                     print(None)
                 elif (buy == "owning"):
-                    print(choice(self.stories['A'].format(pole=self.fields[curr])))
+                    print(None)
                 else:
-                    print("Wkroczyłeś na terytorium zajęte przez wroga")
+                    print(choice(self.stories['A'].format(pole=self.fields[curr])))
             else:
                 if (buy == "buy"):
                     print(choice(self.stories['D'].format(pole=self.fields[curr])))
                 elif (buy == "not"):
                     print(None)
                 elif (buy == "owning"):
-                    print(choice(self.stories['B'].format(pole=self.fields[curr])))
+                    print(None)
                 else:
-                    print("Wkroczyłeś na terytorium zajęte przez wroga")
+                    print(choice(self.stories['B'].format(pole=self.fields[curr])))
