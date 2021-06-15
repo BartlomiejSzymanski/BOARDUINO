@@ -6,7 +6,7 @@ class Data:
         self.names = {[
             "Andrzej", "Leszek", "Anita", "Iwona", "Aniela", "Bogusław", "Jarosław", "Janusz", "Kinga",
             "Eugeniusz", "Weronika", "Jeremiasz", "Ignacy", "Horacy", "Ewa", "Ilona", "Adrianna", "Sasza",
-            "Misza", "Zofia"
+            "Misza", "Zofia", "Maryla", "Dorota", "Tomasz", "Jerzy"
         ]
         }
         self.fields = {
@@ -52,12 +52,14 @@ class Data:
         # F: Szansa/Kasa Społeczna Wołomin
 
         self.stories = {
-            'A': ["""""",
-                """Grupa skorumpowanych funkcjonariuszy policji postanowiła zagarnąć {pole} należące jeszcze do niedawna przez
+            'A': ["""W kościele protestanckim przy [{pole}] trwa uroczyste wesele siostry Mariana Klepaka, szefa Wołominu. Zakradacie się tam
+                pod przykrywką kelnerów i uprowadzacie wpływowego przedsiębiorcę obecnego na przyjęciu, gdy ten wychodzi zapalić na zewnątrz. 
+                Zorganizowanie tego precedensu kosztowało niemałe grosze.""",
+                """Grupa skorumpowanych funkcjonariuszy policji postanowiła zagarnąć [{pole}] należące jeszcze do niedawna przez
                 gangsterów z Wołominu. Wasz księgowy, a zarazem syn Pershinga – Jeremiasz Barański, korzystając z wyświadczonej 
                 przysługi wobec oficera CBŚ, przejmuje dla was lokalne nieruchomości na półlegalnie. Pershing przerabia uzyskane
                 budowle w bar, pralnię i klub disco, gdzie możecie rekrutować kolejnych wykidajłów.""",
-                """Starasz się razem z ekipą z {pole} przepędzić wrogich bandytów ze spornego terytorium. Nie udaje się to wam.
+                """Starasz się razem z ekipą z [{pole}] przepędzić wrogich bandytów ze spornego terytorium. Nie udaje się to wam.
                 Z kawiarni, której właścicielką jest Mira Orłow, była małżonka Pershinga, wyskakuje zastęp uzbrojonych po zęby
                 mafiozów z Wołominu. Ponosicie duże straty i zarządzacie odwrót.""",
                 """ """,
@@ -79,7 +81,10 @@ class Data:
                 """ """
             ]
             ,
-            'B': [""" """,
+            'B': ["""'Nawet idiota, który ma sprawną tylko jedną półkulę, domyśliłby się, że muszą w tym maczać palce jakieś służby.' – to zdanie wypowiedział
+                doradca Klepaka, wysyłając Cię na przeszpiegi nadzwyczajnego spotkania, jak się okazało, skorumpowanych urzędników i pruszkowskich tuz 
+                w podstarzałej kamienicy, o których dowiedział się wasz szpicel. Uciekając ze zlotu przez [{pole}] upuszczasz walizkę z pieniędzmi i zbyt późno 
+                orientujesz się, że ją zgubiłeś.""",
                 """ """,
                 """ """,
                 """ """,
@@ -102,7 +107,7 @@ class Data:
 
             ],
             'C': ["""Prawnik ze swoją teczką może nakraść więcej niż stu ludzi z rewolwerami.
-                Przejmujesz {pole} po przekręcie finansowym dokonanym przez waszego 
+                Przejmujesz [{pole}] po przekręcie finansowym dokonanym przez waszego 
                 księgowego, który przekupił pracownika Urzędu Skarbowego, aby ten przymknął oko 
                 na wasze poczynania. Uważaj na rozwścieczonych bandytów Wołominu, czyhających w okolicznych dzielnicach.""",
                 """Poszukując Anastazji, Pershing wysyła Cię na zwiady w okolice stadionu, w okolicy kótrego po raz ostatni
@@ -152,7 +157,7 @@ class Data:
             'E': ["""'Baranina' uzyskuje dla Ciebie przepustkę z więizienia w razie, gdyby złapano się w akcji, do której Cię
                 przygotowuje. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment.""",
                 """Zostajesz wrobiony w kradzież biżuterii niskiego sortu. Trafiasz do aresztu na kilka miesięcy.""",
-                """ """,
+                """Idź na Dworzec Zachodni. """,
                 """ """,
                 """ """,
                 """ """,
@@ -211,14 +216,14 @@ class Data:
             else:    
                 print("Czekasz na nowe zlecenia od Klepaka.")
         elif: (curr = "Więzienie"):
-            if (team = "P"):
-            else:    
+            print("Przejeżdżasz obok więzienia. Postaraj się nie złapać.")
         elif: (curr = "Idź do więzienia"):
-            if (team = "P"):
-            else:
+            print("Zostałeś aresztowany.")
         elif: (curr = "Start"):
             if (team = "P"):
+                print("Kolejny miesiąc w szeregach Pruszkowa")
             else:        
+                print("Kolejny miesiąc w szeregach Wołominu")
         else:
             if (team == "P"):
                 if (buy == "buy"):
