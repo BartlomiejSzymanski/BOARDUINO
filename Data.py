@@ -134,8 +134,8 @@ class Data:
                 """ """
 
             ],
-            'D': [""" """,
-                """ """,
+            'D': ["""Przejdź na start""",
+                """{pole} jest idealnym miejscem pod wybudowanie nowej restauracji "Srogi Okoń", w podziemiach której razem z waszym  """,
                 """ """,
                 """ """,
                 """ """,
@@ -155,13 +155,16 @@ class Data:
                 """ """,
                 """ """
             ],
-            'E': ["""'Baranina' uzyskuje dla Ciebie przepustkę z więizienia w razie, gdyby złapano się w akcji, do której Cię
-                przygotowuje. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment.""",
+            'E': ["""'Baranina' uzyskuje dla Ciebie przepustkę z więzienia w razie, gdyby złapano Cię w akcji, do której jesteś
+                przygotowywany. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment.""",
                 """Zostajesz wrobiony w kradzież biżuterii niskiego sortu. Trafiasz do aresztu na kilka miesięcy.""",
                 """Idź na Dworzec Zachodni. Będą tam na Ciebie czekać konsultanci podatkowi przyjaźni Pershingowi, z którymi
                 być może dobijesz targu.""",
-                """ """,
-                """ """,
+                """Idź na Aleje Ujazdowskie. Szef oczekuje, że będziesz w pełni gotowści na zaplanowaną obławę policyjną.""",
+                """'Jeśli robisz coś złego, zrób to stanowczo, a wyjdziesz na prowadzenie.' Tym zdaniem Klepak rozkazuje Ci 
+                zlikwidować Mirosława "Maliznę" Danielaka, członka zarządu gangu pruszkowskiego, który akurat dzisiaj 
+                wychodzi na warunkowym zwolnieniu z więzienia. Musisz zapłacić strażnikowi przy bramie, by usunął się z miejsca akcji na czas,
+                jak mu to ująłeś, 'akcji dywersyjnej'. """,
                 """ """,
                 """ """,
                 """ """,
@@ -179,11 +182,16 @@ class Data:
                 """ """
 
             ],
-            'F': [""" """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
+            'F': ["""Obrabowałeś bank na przedmieściach. Zyskujesz dla swojego gangu M200.""",
+                """Jeden z sędziów przychylny do tej pory Mirze Orłow odwrócił się do was plecami. Na szczęście posiadał dowody
+                tylko na nieliczne przestępstwa, więc niewielka grzywna zdała egzamin. Płacisz M150.""",
+                """Założone przez Ciebie konto w szwajcarskim banku okazało się być strzałem w dziesiątkę. Doszło do awarii systemów
+                płatniczych, dzięki którym zyskujesz M200.""",
+                """Doszło do wybuchu w willi byłego emerytowanego szefa waszego gangu "Dziada". Jako że Klepak silnie przywiązany jest 
+                do tradycji, musisz zapłacić 115M jako """,
+                """Mira, jako miłośniczka odradzającej się zachodniej kultury, organizuje przepastny 
+                wybieg mody w warszawskim "Domu Towarowym Braci Jabłkowskich". Kierownik centrum handlowego zatrudnia Cię jako bramkarza
+                na wydarzeniu. Zyskujesz 25M. """,
                 """ """,
                 """ """,
                 """ """,
