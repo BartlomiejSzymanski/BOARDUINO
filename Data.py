@@ -57,7 +57,7 @@ class Data:
                 gangsterów z Wołominu. Wasz księgowy, a zarazem syn Pershinga – Jeremiasz Barański, korzystając z wyświadczonej 
                 przysługi wobec oficera CBŚ, przejmuje dla was lokalne nieruchomości na półlegalnie. Pershing przerabia uzyskane
                 budowle w bar, pralnię i klub disco, gdzie możecie rekrutować kolejnych wykidajłów.""",
-                """Starasz się razem z ekipą z {pole} przepędzić wrogich badnytów ze spornego terytorium. Nie udaje się to wam.
+                """Starasz się razem z ekipą z {pole} przepędzić wrogich bandytów ze spornego terytorium. Nie udaje się to wam.
                 Z kawiarni, której właścicielką jest Mira Orłow, była małżonka Pershinga, wyskakuje zastęp uzbrojonych po zęby
                 mafiozów z Wołominu. Ponosicie duże straty i zarządzacie odwrót.""",
                 """ """,
@@ -149,8 +149,9 @@ class Data:
                 """ """,
                 """ """
             ],
-            'E': [""" """,
-                """ """,
+            'E': ["""'Baranina' uzyskuje dla Ciebie przepustkę z więizienia w razie, gdyby złapano się w akcji, do której Cię
+                przygotowuje. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment.""",
+                """Zostajesz wrobiony w kradzież biżuterii niskiego sortu. Trafiasz do aresztu na kilka miesięcy.""",
                 """ """,
                 """ """,
                 """ """,
