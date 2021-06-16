@@ -61,24 +61,7 @@ class Data:
                 budowle w bar, pralnię i klub disco, gdzie możecie rekrutować kolejnych wykidajłów.""",
                 """Starasz się razem z ekipą z [{pole}] przepędzić wrogich bandytów ze spornego terytorium. Nie udaje się to wam.
                 Z kawiarni, której właścicielką jest Mira Orłow, była małżonka Pershinga, wyskakuje zastęp uzbrojonych po zęby
-                mafiozów z Wołominu. Ponosicie duże straty i zarządzacie odwrót.""",
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """
+                mafiozów z Wołominu. Ponosicie duże straty i zarządzacie odwrót."""
             ]
             ,
             'B': ["""'Nawet idiota, który ma sprawną tylko jedną półkulę, domyśliłby się, że muszą w tym maczać palce jakieś służby.' – to zdanie wypowiedział
@@ -86,27 +69,10 @@ class Data:
                 w podstarzałej kamienicy, o których dowiedział się wasz szpicel. Uciekając ze zlotu przez [{pole}] upuszczasz walizkę z pieniędzmi i zbyt późno 
                 orientujesz się, że ją zgubiłeś.""",
                 """'Ale jeśli życie czegoś mnie nauczyło to tego, że wyborów należy dokonywać samodzielnie, a nie spełniać oczekiwania innych'. 
-                Po tych słowach Klepak skinieniem głowy rozkazuje Ci zlikwidować Andrzeja Leniarta, zastępcy szefa Komisji Bezpieczeństwa Narodowego, podczas
-                "rozmowy" w biurze obsadzonym przez pruszkowskich.""",
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """
-
+                Po tych słowach Klepak skinieniem głowy rozkazuje Ci zlikwidować Andrzeja Leniarta, zastępcę szefa Komisji Bezpieczeństwa Narodowego, podczas
+                "rozmowy" w biurze obsadzonym przez pruszkowskich gangsterów. Musisz zapłacić ogromne odszkodowanie, aby zatuszować sprawę.""",
+                """'Jeśli robisz coś złego, zrób to stanowczo, a wyjdziesz na prowadzenie.'  Klepak zleca Ci zabójstwo prawnika, który od wielu lat ściga
+                wołomińskie interesy. Uważaj na jego obstawę."""
             ],
             'C': ["""Prawnik ze swoją teczką może nakraść więcej niż stu ludzi z rewolwerami.
                 Przejmujesz [{pole}] po przekręcie finansowym dokonanym przez waszego 
@@ -116,24 +82,7 @@ class Data:
                 wychwycono sygnał z jej komórki. Po córce szefa ani śladu, za to znaleźliście skład kontrabandy ukryty w piwnicy
                 opustoszałego bundyku nieopdal stadionu. Postanawiacie przejąć nieruchomość, opłacając skarbówkę.""",
                 """Inwestycje rządzą światem. Przekazujecie kilkadziesiąt tysięcy gotówki na rozkręcenie lombardu nieopodal {pole}.
-                Pomaga Ci w tym zadaniu "Masa" – jeden z najbardziej zaufanych współpracowników Pershinga.""",
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """
+                Pomaga Ci w tym zadaniu "Masa" – jeden z najbardziej zaufanych współpracowników Pershinga."""
 
             ],
             'D': ["""{pole} jest dość smakowitym kąskiem, na który od kilku miesięcy czaił się zarówno wasz gang, jak i wrogowie z Pruszkowa. Sytuacja przybiera
@@ -143,24 +92,7 @@ class Data:
                 uruchamiacie kasyno. Klepak zjawaia się tam razem z zarządem. Świetnie się bawicie.""",
                 """Po ciężkim dniu w pracy razem ze swoimi przyjaciółmi przesiadujecie w barze, gdzie barman sprzedaje wam cynk o nielegalnej
                 licytacji budynku na {pole} lansowanej przez skorumpowanych służbistów Urzędu Ochrony Państwa. Nie możesz przepuścić tej okazji. 
-                Dzwonisz do Klepaka, który daje Ci aprobatę na przejęcie licytacji ze specjalnie przydzielonym zespołem interwencyjnym.""",
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """
+                Dzwonisz do Klepaka, który daje Ci aprobatę na przejęcie licytacji ze specjalnie przydzielonym zespołem interwencyjnym."""
             ],
             'E': ["""'Baranina' pozyskuje dla Ciebie przepustkę z więzienia w razie, gdyby złapano Cię w akcji, do której jesteś
                 przygotowywany. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment (wykorzystaj dobrze tę wiadomość).""",
