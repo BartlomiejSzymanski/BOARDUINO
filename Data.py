@@ -85,8 +85,12 @@ class Data:
                 doradca Klepaka, wysyłając Cię na przeszpiegi nadzwyczajnego spotkania, jak się okazało, skorumpowanych urzędników i pruszkowskich tuz 
                 w podstarzałej kamienicy, o których dowiedział się wasz szpicel. Uciekając ze zlotu przez [{pole}] upuszczasz walizkę z pieniędzmi i zbyt późno 
                 orientujesz się, że ją zgubiłeś.""",
-                """ """,
-                """ """,
+                """'Ale jeśli życie czegoś mnie nauczyło to tego, że wyborów należy dokonywać samodzielnie, a nie spełniać oczekiwania innych'. 
+                Po tych słowach Klepak skinieniem głowy rozkazuje Ci zlikwidować Andrzeja Leniarta, zastępcy szefa Komisji Bezpieczeństwa Narodowego, podczas
+                "rozmowy" w biurze obsadzonym przez pruszkowskich.""",
+                """Centralne Biuro Antykorupcyjne w porozumieniu z CBŚ organizuje szeroko zakrojony najazd na wasze placówki, m.in. Zakłady Naprawcze Taboru Kolejowego,
+                gdzie znajduje w skrytkach kilka ton narkotyków i kontrabandy. Trafiasz do więzienia, a każdy z graczy musi zapłacić M150 (włącznie z Tobą), 
+                aby zapobiec kolejnym akcjom i uciszyć niewygodnych urzędników.""",
                 """ """,
                 """ """,
                 """ """,
@@ -113,8 +117,8 @@ class Data:
                 """Poszukując Anastazji, Pershing wysyła Cię na zwiady w okolice stadionu, w okolicy kótrego po raz ostatni
                 wychwycono sygnał z jej komórki. Po córce szefa ani śladu, za to znaleźliście skład kontrabandy ukryty w piwnicy
                 opustoszałego bundyku nieopdal stadionu. Postanawiacie przejąć nieruchomość, opłacając skarbówkę.""",
-                """Inwestycje rządzą światem. Przekazujecie kilkadziesiąt tysięcy gotówki na rozrkęcenie lombardu nieopodal {pole}.
-                Pomaga Ci w tym zadaniu "Mas" – jeden z najbardziej zaufanych współpracowników Pershinga.""",
+                """Inwestycje rządzą światem. Przekazujecie kilkadziesiąt tysięcy gotówki na rozkręcenie lombardu nieopodal {pole}.
+                Pomaga Ci w tym zadaniu "Masa" – jeden z najbardziej zaufanych współpracowników Pershinga.""",
                 """ """,
                 """ """,
                 """ """,
@@ -134,9 +138,14 @@ class Data:
                 """ """
 
             ],
-            'D': ["""Przejdź na start""",
-                """{pole} jest idealnym miejscem pod wybudowanie nowej restauracji "Srogi Okoń", w podziemiach której razem z waszym  """,
-                """ """,
+            'D': ["""{pole} jest dość smakowitym kąskiem, na który od kilku miesięcy czaił się zarówno wasz gang, jak i wrogowie z Pruszkowa. Sytuacja przybiera
+                dość ciekawy obrót, gdy zyskujecie potężną kartę przetargową w postaci dowodów defraudacji pieniężnej przez biznesmena, kierującego wiekszością 
+                okolicznych mini-przedsiębiorstw. Od tej pory ściągacie z nich haracz.""",
+                """{pole} jest idealnym miejscem pod wybudowanie nowej restauracji "Srogi Okoń", w podziemiach której razem z zaufanym doradcą podatkowym Miry
+                uruchamiacie kasyno. Pershing zjawaia się tam razem z zarządem. Świetnie się bawicie.""",
+                """Po ciężkim dniu w pracy razem ze swoimi przyjaciółmi przesiadujecie w barze, gdzie barman sprzedaje wam cynk o nielegalnej
+                licytacji budynku na {pole} lansowanej przez skorumpowanych służbistów Urzędu Ochrony Państwa. Nie możesz przepuścić tej okazji. 
+                Dzwonisz do Klepaka, który daje Ci aprobatę na przejęcie licytacji ze specjalnie przydzielonym zespołem interwencyjnym.""",
                 """ """,
                 """ """,
                 """ """,
@@ -155,7 +164,7 @@ class Data:
                 """ """,
                 """ """
             ],
-            'E': ["""'Baranina' uzyskuje dla Ciebie przepustkę z więzienia w razie, gdyby złapano Cię w akcji, do której jesteś
+            'E': ["""'Baranina' pozyskuje dla Ciebie przepustkę z więzienia w razie, gdyby złapano Cię w akcji, do której jesteś
                 przygotowywany. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment.""",
                 """Zostajesz wrobiony w kradzież biżuterii niskiego sortu. Trafiasz do aresztu na kilka miesięcy.""",
                 """Idź na Dworzec Zachodni. Będą tam na Ciebie czekać konsultanci podatkowi przyjaźni Pershingowi, z którymi
@@ -165,7 +174,7 @@ class Data:
                 zlikwidować Mirosława "Maliznę" Danielaka, członka zarządu gangu pruszkowskiego, który akurat dzisiaj 
                 wychodzi na warunkowym zwolnieniu z więzienia. Musisz zapłacić strażnikowi przy bramie, by usunął się z miejsca akcji na czas,
                 jak mu to ująłeś, 'akcji dywersyjnej'. """,
-                """ """,
+                """Przejdź na start. Zacznij knowania ze świeżym umysłem.""",
                 """ """,
                 """ """,
                 """ """,
@@ -188,11 +197,11 @@ class Data:
                 """Założone przez Ciebie konto w szwajcarskim banku okazało się być strzałem w dziesiątkę. Doszło do awarii systemów
                 płatniczych, dzięki którym zyskujesz M200.""",
                 """Doszło do wybuchu w willi byłego emerytowanego szefa waszego gangu "Dziada". Jako że Klepak silnie przywiązany jest 
-                do tradycji, musisz zapłacić 115M jako """,
+                do tradycji mafijnych waszego ugrupowania, musisz zapłacić 115M jako zapomogę dla dawnego szefa.""",
                 """Mira, jako miłośniczka odradzającej się zachodniej kultury, organizuje przepastny 
                 wybieg mody w warszawskim "Domu Towarowym Braci Jabłkowskich". Kierownik centrum handlowego zatrudnia Cię jako bramkarza
                 na wydarzeniu. Zyskujesz 25M. """,
-                """ """,
+                """Przejdź na start. Wspieraj gang na co raz to nowsze sposoby.""",
                 """ """,
                 """ """,
                 """ """,
