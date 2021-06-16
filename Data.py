@@ -88,9 +88,7 @@ class Data:
                 """'Ale jeśli życie czegoś mnie nauczyło to tego, że wyborów należy dokonywać samodzielnie, a nie spełniać oczekiwania innych'. 
                 Po tych słowach Klepak skinieniem głowy rozkazuje Ci zlikwidować Andrzeja Leniarta, zastępcy szefa Komisji Bezpieczeństwa Narodowego, podczas
                 "rozmowy" w biurze obsadzonym przez pruszkowskich.""",
-                """Centralne Biuro Antykorupcyjne w porozumieniu z CBŚ organizuje szeroko zakrojony najazd na wasze placówki, m.in. Zakłady Naprawcze Taboru Kolejowego,
-                gdzie znajduje w skrytkach kilka ton narkotyków i kontrabandy. Trafiasz do więzienia, a każdy z graczy musi zapłacić M150 (włącznie z Tobą), 
-                aby zapobiec kolejnym akcjom i uciszyć niewygodnych urzędników.""",
+                """ """,
                 """ """,
                 """ """,
                 """ """,
@@ -165,7 +163,7 @@ class Data:
                 """ """
             ],
             'E': ["""'Baranina' pozyskuje dla Ciebie przepustkę z więzienia w razie, gdyby złapano Cię w akcji, do której jesteś
-                przygotowywany. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment.""",
+                przygotowywany. Nie zdradza jednak szczegółów i każe Ci czekać na odpowiedni moment (wykorzystaj dobrze tę wiadomość).""",
                 """Zostajesz wrobiony w kradzież biżuterii niskiego sortu. Trafiasz do aresztu na kilka miesięcy.""",
                 """Idź na Dworzec Zachodni. Będą tam na Ciebie czekać konsultanci podatkowi przyjaźni Pershingowi, z którymi
                 być może dobijesz targu.""",
@@ -175,13 +173,24 @@ class Data:
                 wychodzi na warunkowym zwolnieniu z więzienia. Musisz zapłacić strażnikowi przy bramie, by usunął się z miejsca akcji na czas,
                 jak mu to ująłeś, 'akcji dywersyjnej'. """,
                 """Przejdź na start. Zacznij knowania ze świeżym umysłem.""",
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
-                """ """,
+                """Centralne Biuro Antykorupcyjne w porozumieniu z CBŚ organizuje szeroko zakrojony najazd na wasze placówki, m.in. Zakłady Naprawcze Taboru Kolejowego,
+                gdzie znajdują w skrytkach kilka ton narkotyków i kontrabandy. Trafiasz do więzienia, a każdy z graczy musi zapłacić M150 (włącznie z Tobą), 
+                aby zapobiec kolejnym akcjom i uciszyć niewygodnych urzędników.""",
+                """Udajesz się na Ulicę Świetokrzyską, gdzie pod Gmachem Ministerstwa Finansów odbywa się rozmowa między Pershingiem, a zastępcą wiceministra
+                Finansów w ważkich sprawach. Stanowisz jego ochronę.""",
+                """Przesiadując spokojnie w swoim domu z rodziną przy niedzielnym obiedzie, nagle słyszysz strzały. Szkło rozlewa się lawiną na podłogę salonu, a 
+                w ogrodzie słyszysz odgłosy napastników. Jako że codziennie towarzyszy Ci stres związany z pracą z gangiem, jesteś na to przygotowany.
+                Postanawiasz natychmiast ewakuować się z domu do najbliższego rewiru pruszkowskiego – do browarni Zbigniewa
+                'Carringtona' Mikołajewskiego. Cudem uchodzicie z życiem. Cofnij się o trzy pola.""",
+                """Pershing wysyła Cię na specjalną misję do Płocka. Masz odebrać aktywa finansowe ważnej firmy. Nie powiedział Ci jakiej. Nie kwestionujesz
+                jego decyzji. Bierzesz najszybszy pociąg z rana, jaki tylko możesz. Idź na najbliższy Dworzec Kolejowy.""",
+                """Ku Twojemu zaskoczeniu Mira Orłow, była żona Pershinga, odwiedza Cię, gdy idziesz do kiosku kupić najnowszą gazetę. Proponuje Ci przejście na
+                jej stronę, wygarniając, jak możesz współpracować "z takim potworem, jakim jest Andrzej Kolikowski". Odmawiasz jej, przez co 
+                zza rogu zaczynają gonić Cię jej obstawa. Cofasz się o pięć pól.""",
+                """Nadszedł dzień Twoich urodzin. Mimo ciężkiej natury pracy, której się podejmujesz, Pershing postanawia wynagrodzić Cię za lojalność. Koledzy
+                z Pruszkowa wyprawiają Ci huczne przyjęcie urodzinowe na jachcie na Wiśle. Otrzymujesz pokaźne podarki. Pobierz M250.""",
+                """Podczas wymiany zakładników w Ożarowie Mazowieckim nieopodal willi Pershinga dochodzi do strzelaniny, w wyniku której zostajesz postrzelony
+                w nogę. Trafiasz do szpitala. Aby uniknąć alarmowania policji o zajściu, płacisz dodatkowo lekarzowi M150.""",
                 """ """,
                 """ """,
                 """ """,
